@@ -1,1 +1,296 @@
-Hello World
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <title>Bobbify</title>
+    
+    <meta name="description" content="Ik help startups met het opzetten van online winkels." />
+    
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+    <style>
+    
+    html, body {
+        background: #CED3D3;
+        color: rgba(0, 0, 0, 0.7);
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 2.0rem;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+    }
+    
+    h1 {
+        font-weight: 200;
+        font-size: 4.0rem;
+        color: rgba(255, 255, 255, 1);
+        margin-bottom: 40px;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+        font-weight: 200;
+        color: rgba(255, 255, 255, 1);
+    }
+    
+    h3 {
+        font-size: 2.3rem;
+        font-weight: 100;
+        color: rgba(0, 0, 0, 1);
+        margin-top: 120px;
+    }
+    
+    h4 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 1);
+    }
+    
+    h5 {
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 1);
+    }
+    
+    p {
+        margin-left: 28px;
+        margin-top: 20px;
+    }
+    
+    a {
+        color: #F3685C;
+        margin-left: 28px;
+    }
+    
+    .glyphicon {
+        color: #F3685C;
+        margin-right: 10px;
+    }
+    
+    header {
+        padding: 14% 0;
+        background: RGBA(250, 121, 98, 1); /* Old browsers */
+        background: -moz-linear-gradient(left,  RGBA(250, 121, 98, 1) 0%, RGBA(236, 87, 87, 1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,RGBA(250, 121, 98, 1)), color-stop(100%,RGBA(236, 87, 87, 1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left,  RGBA(250, 121, 98, 1) 0%,RGBA(236, 87, 87, 1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left,  RGBA(250, 121, 98, 1) 0%,RGBA(236, 87, 87, 1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(left,  RGBA(250, 121, 98, 1) 0%,RGBA(236, 87, 87, 1) 100%); /* IE10+ */
+        background: linear-gradient(to right,  RGBA(250, 121, 98, 1) 0%,RGBA(236, 87, 87, 1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa7962', endColorstr='#ef5754',GradientType=.8 ); /* IE6-9 */
+    }
+    
+    section {
+        background: #FFF;
+    }
+    
+    .intro {
+        padding: 0 90px;
+    }
+    
+    .intro .row:last-child {
+        margin-bottom: 120px;
+    }
+    
+    .call-to-action {
+        background: #363B53;
+    }
+    
+    .call-to-action .row {
+        margin: 60px 0;
+    }
+    
+    .top-buffer {
+        margin-top: 60px;
+    }
+    
+    .navbar-primary {
+        height: 70px;
+        background: transparent;
+        -webkit-transition: background-color ease-in-out .3s;
+        -moz-transition: background-color ease-in-out .3s;
+        -o-transition: background-color ease-in-out .3s;
+        transition: background-color ease-in-out .3s;
+    }
+    
+    .navbar-header {
+        margin: 0 auto;
+    }
+    
+    .navbar-brand img {
+        width: 32px;
+        height: auto;
+    }
+    
+    .navbar-links a {
+        font-weight: 600;
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 1);
+        text-shadow: none;
+    }
+    
+    .nav>li>a {
+      position: relative;
+      display: block;
+      padding: 25px 4px;
+    }
+    
+    .navbar-brand, .navbar-nav>li>a {
+      text-shadow: none;
+    }
+    
+    .nav>li>a:focus, .nav>li>a:hover {
+        text-decoration: none;
+        background-color: transparent;
+    }
+    
+    .btn-start {
+        font-weight: 600;
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 1);
+        background: rgba(0, 0, 0, .2);
+        padding: 8px 10px;
+        text-shadow: none;
+        margin-top: 16px;
+    }
+    
+    .btn-start:hover {
+        color: #FFF;
+        background: rgba(0, 0, 0, .3);
+    }
+    
+    </style>
+    
+</head>
+
+<body>
+    <header class="container text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Start your store online.</h1>
+                <h2>Helping startups getting their business online using Shopify.</h2>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-fixed-top">
+        <div class="container navbar-primary">
+            <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img class="img-responsive center-block" src="http://www.bmuller.nl/test/static/images/logo.svg">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="collapse">
+                <ul class="nav navbar-nav navbar-links">
+                    <li><a href="#">What is Shopify?</a></li>
+                    <li><a href="#">Resources</a></li>
+                </ul>
+                <div class="nav navbar-nav navbar-links navbar-right">
+                    <a href="#" class="btn btn-start">Start your online store</a>
+                </div>
+            </div>
+        </div></div></div>
+    </nav>
+    <section class="intro container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>Shopify features</h3>
+            </div>
+        </div>
+        <div class="row top-buffer">
+            <div class="col-md-4">
+                <h4><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                Shop op maat gemaakt naar huisstijl</h4>
+                <p>Vestibulum lorem quam, varius eget ipsum vel, lacinia laoreet lorem. Ut posuere elit non convallis blandit. Donec commodo fermentum neque, at sagittis libero faucibus nec. Nam dictum imperdiet dolor vel tincidunt.</p>
+            </div>
+            <div class="col-md-4">
+                <h4><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                Inclusief volledig blog platform</h4>
+                <p>Proin elit quam, feugiat quis sem eu, euismod feugiat lacus. Donec posuere sapien eu auctor lacinia. Quisque dictum augue nec auctor venenatis. Cras tincidunt tristique mauris, non tincidunt metus elementum quis.</p>
+            </div>
+            <div class="col-md-4">
+                <h4><span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>
+                iDeal betalings mogelijkheid (via Mollie)</h4>
+                <p>Fusce ac consectetur enim. Vivamus turpis tellus, malesuada ac erat vitae, pulvinar venenatis turpis. Quisque interdum blandit est id volutpat. Etiam in ipsum sagittis, accumsan ipsum vitae, tincidunt metus.</p>
+                <a>Meer over Mollie</a>
+            </div>
+        </div>
+        <div class="row top-buffer">
+            <div class="col-md-4">
+                <h4><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+                Beheer je shop met de Shopify app</h4>
+                <p>Pellentesque pulvinar ligula vitae tellus ornare, vitae suscipit est pretium. Sed vitae tincidunt mauris. Maecenas posuere, augue vitae bibendum commodo, ante mi laoreet nibh, a pulvinar massa metus eget arcu. Phasellus fermentum purus ac diam sodales dignissim.</p>
+                <a>Download de app</a>
+            </div>
+            <div class="col-md-4">
+                <h4><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+                Je shop op elk apparaat bereikbaar</h4>
+                <p>Nulla facilisis, arcu ac facilisis tincidunt, tortor est congue ligula, eu adipiscing quam ligula ut purus. Suspendisse at gravida dolor. Vestibulum eget odio in massa luctus imperdiet. Donec consequat orci a diam pellentesque mollis.</p>
+            </div>
+            <div class="col-md-4">
+                <h4><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                Veiligheid is belangrijk</h4>
+                <p>Ut sit amet magna orci. Integer sit amet varius ipsum. Ut mattis ullamcorper fermentum. Integer pretium felis sit amet urna volutpat, ac elementum ante interdum.</p>
+            </div>
+        </div>
+        <div class="row top-buffer">
+            <div class="col-md-4">
+                <h4><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                Jou shop in meerdere talen</h4>
+                <p>In vestibulum sapien sed eros cursus lacinia. Cras convallis nulla vitae est vestibulum sodales. Nullam congue ipsum diam, a volutpat lacus sollicitudin in. Etiam sed iaculis lorem, vitae bibendum massa.</p>
+            </div>
+            <div class="col-md-4">
+                <h4><span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                Zoekmachine geoptimaliseerd</h4>
+                <p>Ut nisi sem, dignissim et ultricies ac, vehicula at quam. Donec suscipit feugiat lectus nec imperdiet. Nulla a tellus nisl. Cras luctus enim sapien, at porta magna varius eget.</p>
+            </div>
+            <div class="col-md-4">
+                <h4><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+                Nog meer kenmerken van Shopify
+                </h4>
+                <p>Vestibulum varius adipiscing tortor. In accumsan aliquam facilisis. Maecenas odio erat, elementum sit amet laoreet id, egestas nec velit. Nullam interdum enim fringilla orci elementum aliquet.</p>
+                <a>Meer kenmerken</a>
+            </div>
+        </div>
+    </section>
+    <section class="container call-to-action text-center">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-2">
+                <h5>Start your online shop, and try 14 days for free.</h5>
+            </div>
+            <div class="col-md-3">
+                <a href="#" class="btn btn-start">Start your online store</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+    $(document).scroll(function() {
+        var scroll_start = 0;
+        if(scroll_start == $(this).scrollTop()) {
+          $('.navbar-primary').css('background', 'transparent');
+       } else {
+          $('.navbar-primary').css('background', '#363B53');
+       }
+    });
+</script>
+
+</html>
