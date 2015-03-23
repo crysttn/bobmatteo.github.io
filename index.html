@@ -139,8 +139,8 @@
     }
     
     .navbar-links a {
-        font-weight: 600;
-        font-size: 1rem;
+        font-weight: 900;
+        font-size: 1.16rem;
         color: rgba(255, 255, 255, 1);
         text-shadow: none;
     }
@@ -164,10 +164,15 @@
         font-weight: 600;
         font-size: 1rem;
         color: rgba(255, 255, 255, 1);
-        background: rgba(0, 0, 0, .2);
-        padding: 8px 10px;
+        background: rgba(0, 0, 0, .3);
+        padding: 4px 14px;
         text-shadow: none;
-        margin-top: 16px;
+        margin-top: 18px;
+
+        -webkit-transition: background-color ease-in-out .3s;
+        -moz-transition: background-color ease-in-out .3s;
+        -o-transition: background-color ease-in-out .3s;
+        transition: background-color ease-in-out .3s;
     }
     
     .btn-start:hover {
@@ -203,7 +208,7 @@
                     <li><a href="#">Resources</a></li>
                 </ul>
                 <div class="nav navbar-nav navbar-links navbar-right">
-                    <a href="#" class="btn btn-start">Start your online store</a>
+                    <a href="#" class="btn btn-start">Start your store</a>
                 </div>
             </div>
         </div></div></div>
@@ -287,8 +292,10 @@
         var scroll_start = 0;
         if(scroll_start == $(this).scrollTop()) {
           $('.navbar-primary').css('background', 'transparent');
+          $('.btn-start').css('background', 'rgba(0, 0, 0, .3)');
        } else {
           $('.navbar-primary').css('background', '#363B53');
+          $('.btn-start').css('background', '#009DF8');
        }
     });
 </script>
