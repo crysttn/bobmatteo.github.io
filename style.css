@@ -44,7 +44,7 @@ html, body {
         font-weight: 200;
         font-size: 4rem;
         color: #30373B;
-        margin-bottom: 26px;
+        margin: 160px 0 26px 0;
     }
     
     h2 {
@@ -99,7 +99,6 @@ html, body {
     
     header {
         height: 600px;
-        padding: 10% 0;
         background-image: url(img/hero.png);
         background-size: cover;
         background-position: bottom;
