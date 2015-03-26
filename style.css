@@ -234,3 +234,22 @@ html, body {
         color: #FFF;
         background: #0194E3;
     }
+
+    footer {
+        background: #FFF;
+        padding: 40px 0 60px 0;
+    }
+
+    footer p {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+
+    footer a {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 0 4px;
+        color: #30373B;
+    }
